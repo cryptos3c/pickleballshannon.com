@@ -184,6 +184,7 @@ export default function Header() {
           flex-direction: column;
           text-decoration: none;
           flex-shrink: 0;
+          gap: 0.25rem;
         }
 
         .header-logo-name {
@@ -191,20 +192,19 @@ export default function Header() {
           font-size: 1.25rem;
           font-weight: 800;
           color: var(--charcoal);
-          line-height: 1.1;
+          line-height: 1;
           letter-spacing: -0.01em;
         }
 
         .header-logo-tagline {
+          display: block;
           font-family: var(--font-display);
-          font-size: 0.75rem;
+          font-size: 0.6875rem;
           font-weight: 600;
           color: var(--jade);
           text-transform: uppercase;
           letter-spacing: 0.14em;
-          margin-top: 0.35rem;
-          padding-top: 0.35rem;
-          border-top: 1px solid var(--gray-200);
+          line-height: 1;
         }
 
         .header-links {
