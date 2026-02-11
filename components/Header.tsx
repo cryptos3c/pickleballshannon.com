@@ -48,19 +48,21 @@ export default function Header() {
           {/* Wordmark / Logo */}
           <Link href="/" className="header-logo">
             <span className="header-logo-name">Shannon Kuhlman</span>
-            <span className="header-logo-tagline">Pickleball Pro Coach</span>
+            <span className="header-logo-tagline">Pickleball Coach</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="header-links">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`header-link ${pathname === link.href ? 'active' : ''}`}
-              >
-                {link.label}
-              </Link>
+            {navLinks.map((link, i) => (
+              <span key={link.href} className="header-link-wrapper">
+                {i > 0 && <span className="header-link-sep" aria-hidden="true">·</span>}
+                <Link
+                  href={link.href}
+                  className={`header-link ${pathname === link.href ? 'active' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              </span>
             ))}
           </div>
 
@@ -199,13 +201,28 @@ export default function Header() {
           font-weight: 600;
           color: var(--jade);
           text-transform: uppercase;
-          letter-spacing: 0.08em;
+          letter-spacing: 0.12em;
+          margin-top: 0.25rem;
         }
 
         .header-links {
           display: flex;
           align-items: center;
-          gap: 0.25rem;
+          gap: 0.125rem;
+        }
+
+        .header-link-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 0.125rem;
+        }
+
+        .header-link-sep {
+          color: var(--gray-300);
+          font-size: 1.25rem;
+          line-height: 1;
+          user-select: none;
+          padding: 0 0.125rem;
         }
 
         .header-link {

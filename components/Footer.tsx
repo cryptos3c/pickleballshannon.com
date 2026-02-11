@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="footer-brand">
               <div className="footer-logo">
                 <span className="footer-logo-name">Shannon Kuhlman</span>
-                <span className="footer-logo-tagline">Pickleball Pro Coach</span>
+                <span className="footer-logo-tagline">Pickleball Coach</span>
               </div>
               <p className="footer-tagline">
                 Helping players of all levels elevate their game through expert coaching
