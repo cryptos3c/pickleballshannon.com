@@ -202,7 +202,7 @@ export default function Header() {
           color: var(--jade);
           text-transform: uppercase;
           letter-spacing: 0.12em;
-          margin-top: 0.25rem;
+          margin-top: 0.5rem;
         }
 
         .header-links {
