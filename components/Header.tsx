@@ -197,12 +197,14 @@ export default function Header() {
 
         .header-logo-tagline {
           font-family: var(--font-display);
-          font-size: 0.6875rem;
+          font-size: 0.75rem;
           font-weight: 600;
           color: var(--jade);
           text-transform: uppercase;
-          letter-spacing: 0.12em;
-          margin-top: 0.5rem;
+          letter-spacing: 0.14em;
+          margin-top: 0.35rem;
+          padding-top: 0.35rem;
+          border-top: 1px solid var(--gray-200);
         }
 
         .header-links {
